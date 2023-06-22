@@ -1,3 +1,4 @@
+import manager.HelperUser;
 import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -16,36 +17,33 @@ public class LoginTests extends TestBase
             app.getUser().logout();
         }
 
+//        if(app.getUser().isLogged2())              //kak sdelat` vtoroje uslovije proverki ???? esli tablichki net, chtoby proverit` po drugomu elementu
+//        {
+//            app.getUser().logout();
+//        }
     }
-//    @Test
-//    public void loginPositive()
-//    {
-//        String email = "vasya@mail.com", password = "Act123456$";
-//        app.getUser().openLoginForm();
-//        app.getUser().fillLoginForm(email, password);
-//        app.getUser().submitLogin();
-//        app.getUser().pause(5000);
-//        //Assert.assertTrue(app.getUser().isElementPresent(By.linkText("Logged in success")));
-//        //Assert.assertTrue(app.getUser().isElementPresent(By.xpath("h1[class='title']")));
-//        //Assert.assertTrue(app.getUser().isElementPresent(By.cssSelector("#mat-dialog-1 > app-error > div > div > button")));
-//        app.getUser().logout();
-//    }
+
     @Test
     public void loginPositiveUserData()
     {
         User user = new User()
                 .withEmail("vasya@mail.com")
-                .withPassword("Act123456");
+                .withPassword("Act123456$");
         app.getUser().openLoginForm();
-        app.getUser().pause(2000);
+        app.getUser().pause(3000);
         app.getUser().fillLoginForm(user);
         app.getUser().submitLogin();
+        app.getUser().pause(5000);
+        //Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//*['Loggedin']"))); //- pochemu eto RABOTAET ???? AHHHRRR, v teorii tut false i padajet. Ne pravilno propisan selectror , bez probela
+        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//*[contains(text(),'Logged in')]")));
+        app.getUser().successRegOkButton();
     }
 
     @AfterMethod
     public void postconditions()
     {
-
+        app.getUser().pause(5000);
+        app.getUser().logout();
     }
 
 }

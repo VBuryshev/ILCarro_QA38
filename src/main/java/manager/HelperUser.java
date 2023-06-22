@@ -13,12 +13,19 @@ public class HelperUser extends HelperBase
     }
     public boolean isLogged()
     {
-        return isElementPresent(By.cssSelector("body > app-root > app-navigator > div.header > a:nth-child(5)"));
+        pause(2000);
+        return isElementPresent(By.xpath("//*[.='Logged in success']"));
+    }
+
+    public boolean isLogged2()
+    {
+        pause(2000);
+        return isElementPresent(By.cssSelector("div[class='header'] a:nth-child(1)"));
     }
 
     public void logout()
     {
-        click(By.xpath("/html/body/app-root/app-navigator/div[1]/a[5]"));
+        click(By.cssSelector("a[href$='/logout?url=%2Fsearch']"));
     }
 
     public void openLoginForm()
@@ -40,5 +47,10 @@ public class HelperUser extends HelperBase
     public void submitLogin()
     {
         wd.findElement(By.xpath("//button[@type='submit']")).submit();
+    }
+
+    public void successRegOkButton()
+    {
+        wd.findElement(By.xpath("//button[@type='button']")).click();
     }
 }
