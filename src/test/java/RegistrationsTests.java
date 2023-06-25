@@ -30,6 +30,34 @@ public class RegistrationsTests extends TestBase
         Assert.assertTrue(app.getUser().isLoggedSuccess());
     }
 
+    @Test
+    public void registrationNegativeWrongEmail()
+    {
+        int i = (int) (System.currentTimeMillis() / 1000) % 3600;
+        User user = new User()
+                .withName("Vasya")
+                .withLastName("Pupkin")
+                .withEmail("vasya" + i + "gmail.com")
+                .withPassword("Act123456$");
+        app.getUser().openRegistrationForm();
+        app.getUser().fillRegistrationForm(user);
+        app.getUser().submitLogin();
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
+    }
+    @Test
+    public void registrationNegativeWrongPassword()
+    {
+        int i = (int) (System.currentTimeMillis() / 1000) % 3600;
+        User user = new User()
+                .withName("Vasya")
+                .withLastName("Pupkin")
+                .withEmail("vasya" + i + "@gmail.com")
+                .withPassword("Act123456");
+        app.getUser().openRegistrationForm();
+        app.getUser().fillRegistrationForm(user);
+        app.getUser().submitLogin();
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
+    }
     @AfterMethod
     public void postconditions()
     {
