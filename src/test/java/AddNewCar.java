@@ -11,7 +11,7 @@ public class AddNewCar extends TestBase
      if(app.getUser().isLogged() == false)
         app.getUser().login(new User()
                 .withEmail("vasya@mail.com")
-                .withPassword("vasya@mail.com"));
+                .withPassword("Act123456$"));
     }
 
     @Test

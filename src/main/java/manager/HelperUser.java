@@ -2,7 +2,10 @@ package manager;
 
 import models.User;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeMethod;
 
 public class HelperUser extends HelperBase
@@ -48,12 +51,29 @@ public class HelperUser extends HelperBase
         type(By.xpath("//*[@id=\"lastName\"]"), user.getLastName());
         type(By.xpath("//*[@id=\"email\"]"), user.getEmail());
         type(By.xpath("//*[@id=\"password\"]"), user.getPassword());
-        click(By.cssSelector("label[for='terms-of-use']"));
+        clickCheckBox();
     }
 
+    public void clickCheckBox()
+    {
+        System.out.println("Clicked checkbox");
+//        //variant 1
+//        click(By.cssSelector("label[for='terms-of-use']"));
+        //variant 2
+//        JavascriptExecutor js = (JavascriptExecutor) wd;
+//        js.executeScript("document.querySelector('#terms-of-use').click()");
+        //variant 3
+        Rectangle rect = wd.findElement(By.cssSelector("div.checkbox-container")).getRect();
+        int x = rect.getX() + 5;
+        int y = rect.getY() + rect.getHeight() / 4;
+        Actions actions = new Actions(wd);
+        actions.moveByOffset(x, y).click().perform();
+
+    }
     public void submitLogin()
     {
         wd.findElement(By.xpath("//button[@type='submit']")).submit();
+        //wd.findElement(By.xpath("//button[@type='submit']")).click();
     }
 
     public void successRegOkButton()
