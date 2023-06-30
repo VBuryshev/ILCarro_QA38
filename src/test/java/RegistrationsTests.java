@@ -25,8 +25,11 @@ public class RegistrationsTests extends TestBase
                 .withEmail("vasya" + i + "@gmail.com")
                 .withPassword("Act123456$");
         app.getUser().openRegistrationForm();
+        logger.info("openRegistrationForm invoked");
         app.getUser().fillRegistrationForm(user);
         app.getUser().submitLogin();
+        logger.info("registrationPositive starts with credentials : login was - "
+                + user.getEmail() +" " + "password was - " + user.getPassword());
         Assert.assertTrue(app.getUser().isLoggedSuccess());
     }
 

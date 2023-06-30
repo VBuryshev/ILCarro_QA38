@@ -68,7 +68,6 @@ public class HelperUser extends HelperBase
         int y = rect.getY() + rect.getHeight() / 4;
         Actions actions = new Actions(wd);
         actions.moveByOffset(x, y).click().perform();
-
     }
     public void submitLogin()
     {

@@ -2,7 +2,9 @@ package manager;
 
 import models.Car;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -31,6 +33,14 @@ public class HelperCar extends HelperBase
         type(By.id("class"),car.getCarClass());
         type(By.id("serialNumber"),car.getCarRegNumber());
         type(By.id("price"),car.getPrice());
+    }
+    public void clickSerialNumber()
+    {
+        Rectangle rect = wd.findElement(By.cssSelector("div.checkbox-container")).getRect();
+        int x = rect.getX() + 5;
+        int y = rect.getY() + rect.getHeight() / 4;
+        Actions actions = new Actions(wd);
+        actions.moveByOffset(x, y).click().perform();
     }
     public void submitCarForm()
     {
