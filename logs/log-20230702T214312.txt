@@ -1,0 +1,16 @@
+21:43:15 INFO  TestBase - Method public void LoginTests.loginPositiveUserData()  is started
+21:43:17 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[.='Logged in success']
+21:43:22 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[.='Logged in success'] is found
+21:43:22 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[.=' Log in ']
+21:43:22 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[.=' Log in '] is found
+21:43:25 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[@id="email"]
+21:43:25 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[@id="email"] is found
+21:43:25 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[@id="password"]
+21:43:25 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[@id="password"] is found
+21:43:25 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //button[@type='submit']
+21:43:25 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //button[@type='submit'] is found
+21:43:30 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[contains(text(),'success')]
+21:43:30 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[contains(text(),'success')] is found
+21:43:30 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //button[@type='button']
+21:43:30 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //button[@type='button'] is found
+21:43:30 INFO  TestBase - ================================
