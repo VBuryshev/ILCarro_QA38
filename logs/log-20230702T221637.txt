@@ -1,4 +1,4 @@
-22:16:40 INFO  TestBase - Method public void LoginTests.loginPositiveUserData()  is started
+ 22:16:40 INFO  TestBase - Method public void LoginTests.loginPositiveUserData()  is started
 22:16:42 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[.='Logged in success']
 22:16:47 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[.='Logged in success'] is found
 22:16:47 INFO  manager.TestNgListener - Test loginPositiveUserData started
