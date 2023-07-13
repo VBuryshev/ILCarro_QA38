@@ -1,2 +1,0 @@
-21:41:43 INFO  TestBase - Method public void LoginTests.loginPositiveUserData()  is started
-21:41:59 INFO  TestBase - ================================

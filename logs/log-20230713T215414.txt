@@ -1,0 +1,74 @@
+21:54:16 INFO  TestBase - Method public void LoginTests.loginPositiveUserDTO(models.User)  is started
+21:54:18 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[.='Logged in success']
+21:54:23 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[.='Logged in success'] is found
+21:54:23 INFO  manager.TestNgListener - Test loginPositiveUserDTO started
+21:54:23 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[.=' Log in ']
+21:54:23 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[.=' Log in '] is found
+21:54:23 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[@id="email"]
+21:54:23 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[@id="email"] is found
+21:54:23 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[@id="password"]
+21:54:23 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[@id="password"] is found
+21:54:26 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //button[@type='submit']
+21:54:26 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //button[@type='submit'] is found
+21:54:29 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[contains(text(),'success')]
+21:54:30 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[contains(text(),'success')] is found
+21:54:30 INFO  manager.TestNgListener - Test loginPositiveUserDTO successful
+21:54:30 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //button[@type='button']
+21:54:30 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //button[@type='button'] is found
+21:54:30 INFO  TestBase - ================================
+21:54:30 INFO  TestBase - Method public void LoginTests.loginPositiveUserDTO(models.User)  is started
+21:54:32 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[.='Logged in success']
+21:54:37 INFO  manager.WebDriverListener - Element with locator --->>> By.xpath: //*[.='Logged in success'] is found
+21:54:37 INFO  manager.TestNgListener - Test loginPositiveUserDTO started
+21:54:37 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //*[.=' Log in ']
+21:54:42 INFO  manager.WebDriverListener - U have an ERROR: 
+21:54:42 INFO  manager.WebDriverListener - no such element: Unable to locate element: {"method":"xpath","selector":"//*[.=' Log in ']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAIN', ip: '192.168.50.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\unmai\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ed0e426b77dd87292922151c8a148ef
+*** Element info: {Using=xpath, value=//*[.=' Log in ']}
+21:54:42 INFO  manager.WebDriverListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[.=' Log in ']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAIN', ip: '192.168.50.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\unmai\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ed0e426b77dd87292922151c8a148ef
+*** Element info: {Using=xpath, value=//*[.=' Log in ']}
+21:54:42 INFO  manager.WebDriverListener - To watch what happened open this link with error on screenshot --->> src/test/screenshots/scrsht - 3282.jpg
+21:54:42 INFO  manager.TestNgListener - Test loginPositiveUserDTO failedorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[.=' Log in ']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAIN', ip: '192.168.50.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\unmai\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ed0e426b77dd87292922151c8a148ef
+*** Element info: {Using=xpath, value=//*[.=' Log in ']}
+21:54:42 INFO  manager.WebDriverListener - Start searching element ----->>>> By.xpath: //button[@type='button']
+21:54:47 INFO  manager.WebDriverListener - U have an ERROR: 
+21:54:47 INFO  manager.WebDriverListener - no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='button']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAIN', ip: '192.168.50.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\unmai\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ed0e426b77dd87292922151c8a148ef
+*** Element info: {Using=xpath, value=//button[@type='button']}
+21:54:47 INFO  manager.WebDriverListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='button']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAIN', ip: '192.168.50.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\unmai\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ed0e426b77dd87292922151c8a148ef
+*** Element info: {Using=xpath, value=//button[@type='button']}
+21:54:47 INFO  manager.WebDriverListener - To watch what happened open this link with error on screenshot --->> src/test/screenshots/scrsht - 3287.jpg
+21:54:47 INFO  manager.TestNgListener - Test loginPositiveUserDTO started

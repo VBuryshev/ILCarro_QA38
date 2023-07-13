@@ -16,7 +16,12 @@ public class ApplicationManager
     //WebDriver wd;
     HelperUser user;
     HelperCar car;
+    HelperSearch search;
 
+    public HelperSearch getSearch()
+    {
+        return search;
+    }
     public HelperUser getUser()
     {
         return user;
@@ -35,6 +40,7 @@ public class ApplicationManager
         wd.register(new WebDriverListener());
         user = new HelperUser(wd);
         car = new HelperCar(wd);
+        search = new HelperSearch(wd);
         //wd.manage().window().maximize();
         wd.navigate().to("https://ilcarro.web.app/search");
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

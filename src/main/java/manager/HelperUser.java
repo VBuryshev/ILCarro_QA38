@@ -44,7 +44,7 @@ public class HelperUser extends HelperBase
     {
         type(By.xpath("//*[@id=\"email\"]"), user.getEmail());
         //type(By.xpath("//*[@id=\"password\"]"), user.getPassword());
-        type(By.xpath("*[@id=\"password\"]"), user.getPassword());
+        type(By.xpath("//*[@id=\"password\"]"), user.getPassword());
 
     }
     public void fillRegistrationForm(User user)
@@ -73,6 +73,7 @@ public class HelperUser extends HelperBase
     }
     public void submitLogin()
     {
+        pause(3000);
         wd.findElement(By.xpath("//button[@type='submit']")).submit();
         //wd.findElement(By.xpath("//button[@type='submit']")).click();
     }

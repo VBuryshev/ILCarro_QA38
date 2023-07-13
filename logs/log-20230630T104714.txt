@@ -1,2 +1,0 @@
-10:47:24 INFO  TestBase - openRegistrationForm invoked
-10:47:25 INFO  TestBase - registrationPositive starts with credentials : login was - vasya2844@gmail.com password was - Act123456$
