@@ -1,0 +1,22 @@
+21:38:31 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //*[.=' Logout ']
+21:38:36 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //*[.=' Logout '] is found
+21:38:36 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //*[.=' Sign up ']
+21:38:36 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //*[.=' Sign up '] is found
+21:38:36 INFO  TestBase - openRegistrationForm invoked
+21:38:36 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='name']
+21:38:36 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='name'] is found
+21:38:37 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='lastName']
+21:38:37 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='lastName'] is found
+21:38:37 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='email']
+21:38:37 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='email'] is found
+21:38:37 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='password']
+21:38:37 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='password'] is found
+21:38:37 INFO  TestBase - fillRegistrationForm invoked
+21:38:37 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@type='submit']
+21:38:37 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@type='submit'] is found
+21:38:37 INFO  TestBase - submitLogin invoked
+21:38:37 INFO  TestBase - registrationPositive starts with credentials: login john_2316@mail.com & password: $Asdf1234
+21:38:37 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //h2[contains(text(),'success')]
+21:38:38 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //h2[contains(text(),'success')] is found
+21:38:38 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@type='button']
+21:38:38 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@type='button'] is found

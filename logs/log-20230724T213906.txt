@@ -1,0 +1,44 @@
+21:39:08 INFO  manager.WebDriverListener - Start searching element ----> By.id: city
+21:39:08 INFO  manager.WebDriverListener - Element with locator ----> By.id: city is found
+21:39:08 INFO  manager.WebDriverListener - Start searching element ----> By.cssSelector: div.pac-item
+21:39:09 INFO  manager.WebDriverListener - Element with locator ----> By.cssSelector: div.pac-item is found
+21:39:09 INFO  manager.WebDriverListener - Start searching element ----> By.id: dates
+21:39:09 INFO  manager.WebDriverListener - Element with locator ----> By.id: dates is found
+21:39:09 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //div[.=' 14 ']
+21:39:09 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //div[.=' 14 '] is found
+21:39:09 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@aria-label='Next month']
+21:39:09 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@aria-label='Next month'] is found
+21:39:10 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@aria-label='Next month']
+21:39:10 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@aria-label='Next month'] is found
+21:39:11 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@aria-label='Next month']
+21:39:11 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@aria-label='Next month'] is found
+21:39:13 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@aria-label='Next month']
+21:39:13 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@aria-label='Next month'] is found
+21:39:14 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@aria-label='Next month']
+21:39:14 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@aria-label='Next month'] is found
+21:39:15 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@aria-label='Next month']
+21:39:15 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@aria-label='Next month'] is found
+21:39:16 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@aria-label='Next month']
+21:39:16 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@aria-label='Next month'] is found
+21:39:17 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@aria-label='Next month']
+21:39:17 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@aria-label='Next month'] is found
+21:39:18 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //div[.=' 19 ']
+21:39:18 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //div[.=' 19 '] is found
+21:39:19 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@type='submit']
+21:39:19 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@type='submit'] is found
+21:39:20 INFO  manager.WebDriverListener - Something went wrong!
+21:39:20 INFO  manager.WebDriverListener - element click intercepted: Element <button _ngcontent-jcg-c106="" type="submit" disabled="">...</button> is not clickable at point (178, 470). Other element would receive the click: <button mat-button="" type="button" cdkarialive="polite" class="mat-focus-indicator mat-calendar-period-button mat-button mat-button-base" ng-reflect-politeness="polite" aria-label="Choose month and year">...</button>
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAIN', ip: '192.168.50.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\unmai\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53530}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74e6a8074e63c6c368d2ccabf044f2cf
+21:39:20 INFO  manager.WebDriverListener - org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-jcg-c106="" type="submit" disabled="">...</button> is not clickable at point (178, 470). Other element would receive the click: <button mat-button="" type="button" cdkarialive="polite" class="mat-focus-indicator mat-calendar-period-button mat-button mat-button-base" ng-reflect-politeness="polite" aria-label="Choose month and year">...</button>
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MAIN', ip: '192.168.50.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\unmai\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53530}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74e6a8074e63c6c368d2ccabf044f2cf
+21:39:20 INFO  manager.WebDriverListener - This is a link to screenshot with error ---> src/test/screenshots/screen-2360.png

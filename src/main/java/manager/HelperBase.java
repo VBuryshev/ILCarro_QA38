@@ -6,56 +6,46 @@ import org.openqa.selenium.*;
 import java.io.File;
 import java.io.IOException;
 
-public class HelperBase
-{
+public class HelperBase {
+
     WebDriver wd;
 
-    public HelperBase(WebDriver wd)
-    {
+    public HelperBase(WebDriver wd) {
         this.wd = wd;
     }
 
-    public void click(By locator)
-    {
+    public void click(By locator){
         wd.findElement(locator).click();
     }
 
-    public void type(By locator,String text)
-    {
+    public void type(By locator, String text){
         WebElement element = wd.findElement(locator);
-        element.click();
+//        element.click();
         element.clear();
         element.sendKeys(text);
     }
-    public void pause(int millis)
-    {
-        try
-        {
+
+    public void pause(int millis){
+        try {
             Thread.sleep(millis);
-        }
-        catch (InterruptedException e)
-        {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
-    public boolean isElementPresent(By locator)
-    {
+
+    public boolean isElementPresent(By locator){
         return wd.findElements(locator).size() > 0;
     }
 
-    public void takeScreenshot(String link)
-    {
+    public void takeScreenshot(String link){
         File tmp = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
         File screenshot = new File(link);
-        try
-        {
+
+        try {
             Files.copy(tmp, screenshot);
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 
 }

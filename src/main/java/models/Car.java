@@ -11,7 +11,7 @@ import lombok.ToString;
 public class Car
 {
     String location;
-    String manufacturer;
+    String make;
     String model;
     String year;
     String fuel;

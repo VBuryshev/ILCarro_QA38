@@ -9,20 +9,34 @@ repositories {
     mavenCentral()
 }
 
-dependencies
-        {
-            implementation group: 'org.testng', name: 'testng', version: '7.4.0'
-            implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+dependencies {
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation group: 'org.testng', name: 'testng', version: '7.4.0'
 
-            compileOnly 'org.projectlombok:lombok:1.18.28'
-            annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
 
-            testCompileOnly 'org.projectlombok:lombok:1.18.28'
-            testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+    testCompileOnly 'org.projectlombok:lombok:1.18.28'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
 
-            implementation 'ch.qos.logback:logback-classic:1.2.11'
-        }
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+}
 
 test {
     useTestNG()
+}
+
+task tests(type:Test){
+    useTestNG(){
+        def suite = System.getProperty('suite','')
+        if(suite.equals('login')){
+            suites 'src/test/resources/login.xml'
+        } else {
+            suites 'src/test/resources/testng.xml'
+        }
+    }
+    if(project.hasProperty('target')){
+        systemProperty 'target', "${target}"
+    }
+
 }

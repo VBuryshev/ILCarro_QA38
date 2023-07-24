@@ -1,0 +1,4 @@
+21:42:57 INFO  manager.WebDriverListener - Start searching element ----> By.id: city
+21:42:57 INFO  manager.WebDriverListener - Element with locator ----> By.id: city is found
+21:42:57 INFO  manager.WebDriverListener - Start searching element ----> By.cssSelector: div.pac-item
+21:42:57 INFO  manager.WebDriverListener - Element with locator ----> By.cssSelector: div.pac-item is found
